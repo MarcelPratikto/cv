@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+<!DOCTYPE html> tag
+tells web browsers which version of html we are using
+-->
+
+<!--
+<html></html>
+is to specify that the inside of the html opening and closing tag
+contains the html code
+
+lang is language
+dir is direction (does the text go left->right?)
+-->
+<html lang="en" dir="ltr">
+
+  <!--
+  <head></head>
+  holds info about the web page
+  tells browser how it should handle the page
+  -->
+  <head>
+    <!--
+    meta tells the browser extra info
+    the charset="utf-8" attribute tells browsers that we are using the
+    UTF-8 encoding system
+    -->
+    <meta charset="utf-8">
+    <meta author="Marcel">
+    <meta description="CV">
+    <!--
+    title displays the title of the website on the tab of the web browser
+    -->
+    <title>Marcel's CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <!--
+  <body></body>
+  content of the website
+  -->
+  <body>
+    <!--
+    <h1> to <h6> is for headers
+    1 is largest
+    6 is smallest
+    -->
+    <h1 align="center">Marcel Pratikto</h1>
+    <!--hr to add a horizontal rule (a horizontal line)-->
+    <hr>
+
+    <!--
+    <table> is to create a table
+    tr is table row
+    thead is table header
+    th is like td but for headers
+    tbody is table <body>
+    td is table data/table cell used for both tbody and tfoot
+    tfoot is table footer
+    </body>
+    -->
+    <table cellspacing="10"
+    style="/*style is to add css code into the element*/ margin: auto;">
+      <thead>
+        <tr>
+          <th><h1>About Me</h1></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table cellspacing="10">
+              <tr>
+                <td>
+                  <img width="" height="200" src="pics\MarcelPratikto.jpg" alt="picture of me">
+                </td>
+                <td><h3>Education</h3></td>
+                <td>
+                  <!--
+                  <ol></ol> ordered lists (type="i" changes it from number to roman numerals)
+                  <ul></ul> unordered lists
+                  <li></li> contents of <ol> or <ul>
+                  -->
+                  <ol type="i">
+                    <li>
+                      <strong>Elementary School</strong>
+                      <ul>
+                        <li>Ricci 2</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Middle School</strong>
+                      <ul>
+                        <li>Folk Art Cultural Treasure Charter School</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>High School</strong>
+                      <ul>
+                        <li>Preparatory Charter School</li>
+                        <li>Pennsylvania Virtual Charter School</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>College/University</strong>
+                      <ul>
+                        <li>University of the People</li>
+                        <li>
+                          <em>
+                            <!--
+                            The a element is the anchor element, basically hyperlink
+                            href contains a URL that the hyperlink points to
+                            The target attribute controls where to display the link,
+                            _blank causes it to display in a new tab/window depending on the user setting
+                            _self will display it in the current tab/window
+                            -->
+                            <a href="https://www.maranatha.edu/" target="_blank">Maranatha Christian University</a>
+                          </em>
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><h3>Skills</h3></td>
+                <td>
+                  <strong>Proficient with the following programming languages:</strong>
+                  <table>
+                    <tr>
+                      <td>C++</td>
+                    </tr>
+                    <tr>
+                      <td>Java</td>
+                    </tr>
+                    <tr>
+                      <td>Python</td>
+                    </tr>
+                    <tr>
+                      <td>HTML</td>
+                    </tr>
+                    <tr>
+                      <td>CSS</td>
+                    </tr>
+                    <tr>
+                      <td>JavaScript</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><h3>Languages</h3></td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                      <td>Indonesian</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><h3>Contact Info</h3></td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <table>
+                          <thead align="left">
+                            <tr>
+                              <th>Cell</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>                              
+                              <td>267 356 7568</td>
+                            </tr>                           
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th align="left">E-mail</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>marcelaapratikto@gmail.com</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--
+              <tr>
+                <td></td>
+                <td>
+                  <a href="contactMe.html">Contact Me</a>
+                </td>
+              </tr>
+              -->
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+
+    <!--
+      The element "form" creates a context for any labels and inputs inside it
+      class: ???
+      action: what the form should do after clicking submit
+      method: how the form should process the data in regards to the value you specified in the action attribute
+      enctype: specifies which data type our form's data is encoded in
+    -->
+    <form class="" action="mailto:marcelpratikto@rocketmail.com" method="post" enctype="text/plain">
+      <table style="margin: auto;">
+        <thead>
+          <tr>
+            <th colspan="2"><h1>Contact Me</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="">Name:</label>
+            </td>
+            <td>
+              <!--
+                input element for form allows users to input data into the form
+                type: what kind of input it's going to be
+                name: something to label the input
+                value: ???
+              -->
+              <input type="text" name="contactName" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Number:</label>
+            </td>
+            <td>
+              <input type="text" name="contactNumber" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">E-mail:</label>
+            </td>
+            <td>
+              <input type="email" name="contactEmail" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Message:</label>
+            </td>
+            <td>
+              <textarea name="contactMessage" rows="10" cols="30"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td align="center">
+              <input type="submit" name="">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <hr>
+
+    <!-- TODO: add a link to a portofolio of my other programming projects
+    <p>
+      <a href="memes.html">Testing images</a> <br>
+    </p>
+    -->
+
+  <!--
+  TODO Make this stay in a relative bottom right position to the user
+  and brings the user back to the top of the page whenever they want
+  -->
+  <a href="#">Back to the top</a>
+  </body>
+</html>

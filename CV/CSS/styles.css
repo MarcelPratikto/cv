@@ -1,0 +1,18 @@
+body {/*CSS code goes here*/
+  background-color: #c8e6f5;
+}
+hr { /*override hr (horizontal rule)*/
+  display: block;
+  border-style: dotted none none;
+  /*border-top-style: dotted;
+  border-bottom-style: none;*/
+  border-color: black;
+  border-width: 10px;
+  width: 75%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /*
+  margin: 10%;
+  margin-left: 25%;
+  margin-right: 25%;*/
+}
